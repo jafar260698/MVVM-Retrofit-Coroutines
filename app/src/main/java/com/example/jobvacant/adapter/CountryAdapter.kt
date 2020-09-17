@@ -28,7 +28,7 @@ class CountryAdapter(var context: Context, var list: List<Countries>, var listen
         val countries:Countries=list[position]
         holder.country_name.text=countries.country
         holder.poytaxt_textview.text=countries.capital
-
+        // it is
         val requestOptions = RequestOptions()
             .placeholder(R.color.card1)
             .error(R.color.card1)
