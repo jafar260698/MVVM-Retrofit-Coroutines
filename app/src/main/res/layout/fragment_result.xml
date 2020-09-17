@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/card4"
+    android:gravity="center"
+    tools:context=".ui.fragment.ResultFragment">
+
+    <TextView
+        android:id="@+id/natija"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/twenty"
+        android:gravity="center"
+        android:textColor="@color/blue"
+        android:textSize="26sp"
+        android:text="Sizning Natijangiz "/>
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/twenty"
+        android:background="@drawable/quiz_bg_buttons"
+        android:text="Finish"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/eighteensp"
+        android:textStyle="bold"/>
+
+</LinearLayout>

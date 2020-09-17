@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".ui.fragment.QuizFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/tv_question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:textColor="#363A43"
+            android:textSize="22sp"
+            android:text="What country does this flag belong to?"/>
+        <ImageView
+            android:id="@+id/iv_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/argentina"/>
+        <LinearLayout
+            android:id="@+id/ll_progress_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="@dimen/sixteen">
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:max="10"
+                android:minHeight="50dp"
+                android:progress="0"
+                android:indeterminate="false"
+                style="?android:attr/progressBarStyleHorizontal"/>
+            <TextView
+                android:id="@+id/tv_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="15dp"
+                android:textColorHint="#7A8089"
+                android:textSize="14sp"
+                android:text="0/10"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_option_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/ten"
+            android:background="@drawable/default_option_border_bg"
+            android:gravity="center"
+            android:padding="@dimen/fiveteen"
+            android:textColor="@color/blue"
+            android:textStyle="bold"
+            android:textSize="@dimen/eighteensp"
+            tools:text="Apple" />
+
+        <TextView
+            android:id="@+id/tv_option_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/ten"
+            android:background="@drawable/default_option_border_bg"
+            android:gravity="center"
+            android:padding="@dimen/fiveteen"
+            android:textColor="@color/blue"
+            android:textStyle="bold"
+            android:textSize="@dimen/eighteensp"
+            tools:text="Google" />
+
+        <TextView
+            android:id="@+id/tv_option_three"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/ten"
+            android:background="@drawable/default_option_border_bg"
+            android:gravity="center"
+            android:padding="@dimen/fiveteen"
+            android:textColor="@color/blue"
+            android:textStyle="bold"
+            android:textSize="@dimen/eighteensp"
+            tools:text="Android Inc." />
+
+        <TextView
+            android:id="@+id/tv_option_four"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/ten"
+            android:background="@drawable/default_option_border_bg"
+            android:gravity="center"
+            android:padding="@dimen/fiveteen"
+            android:textColor="@color/blue"
+            android:textStyle="bold"
+            android:textSize="@dimen/eighteensp"
+            tools:text="Nokia" />
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/ten"
+            android:background="@color/blue"
+            android:text="Submit"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/eighteensp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+</ScrollView>

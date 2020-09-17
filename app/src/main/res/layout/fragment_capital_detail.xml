@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".ui.fragment.CapitalDetailFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="?android:attr/windowBackground"
+        android:elevation="4dp"
+        android:padding="10dp">
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            android:layout_centerVertical="true"
+            android:adjustViewBounds="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:layout_marginStart="1dp"
+            android:focusable="true"/>
+        <TextView
+            android:id="@+id/detail_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="Umumiy malumotlar"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/twentysp"
+            />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleType="centerCrop"
+        android:id="@+id/image_detail"
+        />
+
+    <TextView
+        android:id="@+id/country_name_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/twentysp"
+        android:text="Davlat"
+        android:layout_margin="@dimen/twenty"
+        android:layout_marginStart="@dimen/ten"
+        android:textColor="@color/blue"/>
+
+    <TextView
+        android:id="@+id/poytaxt_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/twentysp"
+        android:text="Poytaxt"
+        android:layout_margin="@dimen/twenty"
+        android:layout_marginStart="@dimen/ten"
+        android:textColor="@color/blue"/>
+
+</LinearLayout>

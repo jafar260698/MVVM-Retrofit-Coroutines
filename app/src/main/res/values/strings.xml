@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">JobVacant</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="davlatlar">Davlatlar</string>
+    <string name="testlar">Testlar</string>
+    <string name="poytaxtlar">Poytaxtlar</string>
+</resources>
