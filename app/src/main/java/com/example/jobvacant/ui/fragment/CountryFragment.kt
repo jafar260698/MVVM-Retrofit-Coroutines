@@ -39,7 +39,6 @@ class CountryFragment : Fragment(),CountryAdapter.OnItemClickListener {
     val TAG="CountryFragment"
     var search:EditText?=null
 
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
